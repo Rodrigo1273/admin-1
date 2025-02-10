@@ -6,8 +6,8 @@
         <div class="mb-4">
           <label class="block text-gray-700">Usuario</label>
           <input
-            v-model="username"
-            type="text"
+            v-model="email"
+            type="email"
             class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#d2b48c]"
             required
           />
@@ -35,16 +35,24 @@
 <script setup>
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
+import axios from 'axios';
 
-const username = ref('');
+const email = ref('');
 const password = ref('');
 const router = useRouter();
 
-const login = () => {
-  // Simulación de autenticación
-  if (username.value === 'admin' && password.value === 'admin') {
-    router.push('/home');
-  } else {
+const login = async () => {
+  try {
+    const response = await axios.post('/api/login', {
+      email: email.value,
+      contraseña: password.value, // Cambiado de 'password' a 'contraseña'
+    });
+
+    const { token } = response.data;
+    localStorage.setItem('token', token); // Guarda el token en el almacenamiento local
+    router.push('/home'); // Redirige a la página de inicio
+  } catch (error) {
+    console.error('Error en la solicitud de inicio de sesión:', error.response.data);
     alert('Usuario o contraseña incorrectos');
   }
 };

@@ -1,0 +1,110 @@
+[
+  {
+    "_id": "1",
+    "id_reportante": "USR001",
+    "id_reportado": "USR002",
+    "motivo": "Lenguaje inapropiado",
+    "descripcion": "El usuario utilizó palabras ofensivas en el chat.",
+    "estado": "Pendiente",
+    "fecha_reporte": "2024-02-15T14:30:00Z"
+  },
+  {
+    "_id": "2",
+    "id_reportante": "USR003",
+    "id_reportado": "USR004",
+    "motivo": "Spam",
+    "descripcion": "Publica enlaces sospechosos repetidamente.",
+    "estado": "Resuelto",
+    "fecha_reporte": "2024-02-14T10:20:00Z"
+  },
+  {
+    "_id": "3",
+    "id_reportante": "USR005",
+    "id_reportado": "USR006",
+    "motivo": "Acoso",
+    "descripcion": "Envía mensajes ofensivos constantemente.",
+    "estado": "Pendiente",
+    "fecha_reporte": "2024-02-16T08:45:00Z"
+  },
+  {
+    "_id": "4",
+    "id_reportante": "USR007",
+    "id_reportado": "USR008",
+    "motivo": "Suplantación de identidad",
+    "descripcion": "El usuario se hace pasar por otro en la plataforma.",
+    "estado": "Pendiente",
+    "fecha_reporte": "2024-02-18T11:00:00Z"
+  },
+  {
+    "_id": "5",
+    "id_reportante": "USR009",
+    "id_reportado": "USR010",
+    "motivo": "Contenido inapropiado",
+    "descripcion": "Publicó imágenes ofensivas en su perfil.",
+    "estado": "Resuelto",
+    "fecha_reporte": "2024-02-12T15:10:00Z"
+  },
+  {
+    "_id": "6",
+    "id_reportante": "USR011",
+    "id_reportado": "USR012",
+    "motivo": "Bullying",
+    "descripcion": "Realizó comentarios agresivos hacia otro usuario.",
+    "estado": "Pendiente",
+    "fecha_reporte": "2024-02-17T09:05:00Z"
+  },
+  {
+    "_id": "7",
+    "id_reportante": "USR013",
+    "id_reportado": "USR014",
+    "motivo": "Comportamiento disruptivo",
+    "descripcion": "Interrumpió varias veces en las conversaciones grupales.",
+    "estado": "Pendiente",
+    "fecha_reporte": "2024-02-19T16:30:00Z"
+  },
+  {
+    "_id": "8",
+    "id_reportante": "USR015",
+    "id_reportado": "USR016",
+    "motivo": "Contenido explícito",
+    "descripcion": "Compartió material explícito a través de mensajes privados.",
+    "estado": "Resuelto",
+    "fecha_reporte": "2024-02-13T13:25:00Z"
+  },
+  {
+    "_id": "9",
+    "id_reportante": "USR017",
+    "id_reportado": "USR018",
+    "motivo": "Distribución de virus",
+    "descripcion": "Envío de enlaces maliciosos a otros usuarios.",
+    "estado": "Resuelto",
+    "fecha_reporte": "2024-02-20T09:40:00Z"
+  },
+  {
+    "_id": "10",
+    "id_reportante": "USR019",
+    "id_reportado": "USR020",
+    "motivo": "Venta de productos prohibidos",
+    "descripcion": "El usuario ofreció productos ilegales en el chat.",
+    "estado": "Pendiente",
+    "fecha_reporte": "2024-02-14T17:50:00Z"
+  },
+  {
+    "_id": "11",
+    "id_reportante": "USR021",
+    "id_reportado": "USR022",
+    "motivo": "Acusaciones falsas",
+    "descripcion": "Realizó acusaciones sin fundamento en contra de otro usuario.",
+    "estado": "Pendiente",
+    "fecha_reporte": "2024-02-15T10:15:00Z"
+  },
+  {
+    "_id": "12",
+    "id_reportante": "USR023",
+    "id_reportado": "USR024",
+    "motivo": "Comportamiento no apropiado",
+    "descripcion": "Actuó de manera grosera e irrespetuosa con otros usuarios.",
+    "estado": "Resuelto",
+    "fecha_reporte": "2024-02-13T12:00:00Z"
+  }
+]

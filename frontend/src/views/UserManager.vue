@@ -39,7 +39,21 @@
       </table>
       
       <!-- Paginación -->
-      
+      <div class="flex justify-between mt-4">
+        <button 
+          @click="prevPage" 
+          :disabled="currentPage === 1"
+          class="bg-gray-500 text-white px-4 py-2 rounded disabled:opacity-50">
+          Anterior
+        </button>
+        <span>Página {{ currentPage }}</span>
+        <button 
+          @click="nextPage" 
+          :disabled="!hasMoreUsers"
+          class="bg-gray-500 text-white px-4 py-2 rounded disabled:opacity-50">
+          Siguiente
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -50,7 +64,9 @@ import axios from 'axios';
 
 const users = ref([]);
 const searchQuery = ref('');
-
+const currentPage = ref(1);
+const limit = 10;
+let hasMoreUsers = ref(true);
 
 const fetchUsers = async () => {
   try {
@@ -92,8 +108,19 @@ const deleteUser = async (userId) => {
   }
 };
 
+const prevPage = () => {
+  if (currentPage.value > 1) {
+    currentPage.value--;
+    fetchUsers();
+  }
+};
 
-
+const nextPage = () => {
+  if (hasMoreUsers.value) {
+    currentPage.value++;
+    fetchUsers();
+  }
+};
 
 const filteredUsers = computed(() => {
   return users.value.filter(user =>
